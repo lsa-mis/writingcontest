@@ -25,6 +25,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . '/../Support/basicLib.php');
   $department =  $db->real_escape_string(htmlspecialchars($_POST["department"])); //allow NULL
   $gradYearMonth =  htmlspecialchars($_POST["gradYearMonth"]);
   $degree =  $db->real_escape_string(htmlspecialchars($_POST["degree"]));
+  $campusemployee =  htmlspecialchars($_POST["campusemployee"]);
   $finAid =  htmlspecialchars($_POST["finAid"]);
   $finAidNotice = htmlspecialchars($_POST["finAidNotice"]);
   $finAidDesc =  $db->real_escape_string(htmlspecialchars($_POST["finAidDesc"])); //allow NULL
@@ -35,11 +36,11 @@ require_once($_SERVER["DOCUMENT_ROOT"] . '/../Support/basicLib.php');
   $sqlInsert = <<<SQL
   INSERT INTO `tbl_applicant` (`userFname`, `userLname`, `umid`, `uniqname`, `streetL`, `cityL`, `stateL`
     , `zipL`, `usrtelL`, `streetH`, `cityH`, `stateH`, `countryH`, `zipH`, `usrtelH`, `classLevel`, `school`, `campusLocation`, `major`
-    , `department`, `gradYearMonth`, `degree`, `finAid`, `finAidNotice`, `finAidDesc`, `namePub`, `homeNewspaper`, `penName`
+    , `department`, `gradYearMonth`, `degree`, `campusemployee`, `finAid`, `finAidNotice`, `finAidDesc`, `namePub`, `homeNewspaper`, `penName`
     , `created_by`, `created_on`)
   VALUES ('$userFname', '$userLname', '$umid', '$uniqname', '$streetL','$cityL', '$stateL'
     , '$zipL', '$usrtelL', '$streetH','$cityH', '$stateH', '$countryH', '$zipH', '$usrtelH', '$classLevel', '$school'
-    , '$campusLocation', '$major', '$department', '$gradYearMonth', '$degree', '$finAid', '$finAidNotice', '$finAidDesc', '$namePub'
+    , '$campusLocation', '$major', '$department', '$gradYearMonth', '$degree', `$campusemployee', '$finAid', '$finAidNotice', '$finAidDesc', '$namePub'
     , '$homeNewspaper', '$penName', '$login_name', now())
 SQL;
 if (!$db->query($sqlInsert)) {
