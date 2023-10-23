@@ -337,6 +337,7 @@ SQL;
             <input type="file" name="fileToUpload" id="fileToUpload" required />
             <span id="helpBlock2" class="help-block">Title (or first) page of pdf should be <strong><em>title of your manuscript, pen-name</em></strong> and <strong><em>contest and division entered (e.g. Hopwood Poetry)</em></strong> only.</span>
           </div>
+          <?php include("bentley_notice.php"); ?>
           <div class='text-center'>
           <input class="btn btn-success" type="submit" name="upload" value="Upload Application">
           </div>

@@ -159,6 +159,7 @@ if ($hasApplicantDetails) {
                         <p><a href='mailComment.php'><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Questions or Comments</a></p>
                     </div>
                 </div>
+                <?php include("bentley_notice.php"); ?>
             </div>
 
             <div id="contestList">
