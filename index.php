@@ -144,7 +144,7 @@ if ($hasApplicantDetails) {
                 <div class="row clearfix">
                     <div class="col-md-12 column">
                         <h3>Instructions:</h3>
-                        <p class="well well-sm">NOTE: Be sure your profile is up to date before submitting your entry.</em> <a href="detailEdit.php" class="btn btn-info btn-xs" type="button">keep your profile up to date</a></p>
+                        <p class="well well-sm"><strong>NOTE: There are new profile requirements.</strong> Be sure your profile is up to date before submitting your entry.</em> <a href="detailEdit.php" class="btn btn-info btn-xs" type="button">keep your profile up to date</a></p>
                         <ol>
                             <li>Click the ( <span class="btn btn-success btn-xs" disabled="disabled"><span class="glyphicon glyphicon-pencil"></span></span> ) button adjacent to the name of the contest you’d like to enter.</li>
                             <li>Complete the form and click the ( <span class="btn btn-success btn-xs" disabled="disabled">Upload Application</span> ) button.</li>
