@@ -1,3 +1,6 @@
 # Ignore the .htaccess and htaccess files
 .htaccess
 htaccess
+
+*OLD
+*.OLD
