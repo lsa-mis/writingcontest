@@ -35,6 +35,7 @@ if ($result->num_rows > 0) {
         $department =  $row["department"]; //allow NULL
         $gradYearMonth =  $row["gradYearMonth"];
         $degree =  $row["degree"];
+        $campusemployee =  $row["campusemployee"];
         $finAid =  $row["finAid"];
         $finAidNotice = $row["finAidNotice"];
         $finAidDesc =  $row["finAidDesc"]; //allow NULL
@@ -247,7 +248,22 @@ switch ($campusLocation) {
               <input class="date-picker form-control" id="gradYearMonth" tabindex="260" required name="gradYearMonth" value="<?php echo $gradYearMonth;?>"  />
               <label for="degree">Degree</label>
               <input class="form-control" type="text" tabindex="270" required name="degree" value="<?php echo $degree;?>" placeholder="example: Bachelors" />
+              <!-- //////////////////////////////// -->
+
               <hr>
+              <h5>CAMPUS EMPLOYMENT:</h5>
+              <p>In the event you are a contest winner, we need to know if you are currently employed on campus to enable the correct processing of your award.</p>
+              <label for="campusemployee">Are you currently an active campus employee <em>(workstudy, GSI, etc)</em>?&nbsp;&nbsp;</label>
+              <label class="radio-inline">
+                <input type="radio" id="inlineRadio1" name="campusemployee" required <?php echo ($campusemployee == 1)? 'checked' : ''; ?> value="1"> YES
+              </label>
+              <label class="radio-inline">
+                <input type="radio" id="inlineRadio2" name="campusemployee" required <?php echo ($campusemployee == 0)? 'checked' : ''; ?> value="0"> NO
+              </label>
+              <!-- //////////////////////////////// -->
+
+              <hr>
+              <h5>FINANCIAL AID:</h5>
               <label for="finAid">Do you currently receive NEED-BASED financial aid?&nbsp;&nbsp;</label>
               <label class="radio-inline">
                 <input type="radio" id="inlineRadio1" name="finAid" required <?php echo ($finAid == 1)? 'checked' : ''; ?> value="1"> YES
