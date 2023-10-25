@@ -296,6 +296,8 @@ SQL;
             echo '<label class="radio-inline"><input type="radio" name="categoryName" value="2" required >Screenplay</label>';
             break;
         case 10: // it would be categoryID 1 2 3 4 5
+        case 36: //falls through 
+        case 37: //falls through 
             echo '<label class="radio-inline"><input type="radio" name="categoryName" value="1" required >Drama</label>';
             echo '<label class="radio-inline"><input type="radio" name="categoryName" value="4" required >Fiction</label>';
             echo '<label class="radio-inline"><input type="radio" name="categoryName" value="3" required >Nonfiction</label>';
