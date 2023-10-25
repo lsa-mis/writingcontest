@@ -40,7 +40,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . '/../Support/basicLib.php');
     , `created_by`, `created_on`)
   VALUES ('$userFname', '$userLname', '$umid', '$uniqname', '$streetL','$cityL', '$stateL'
     , '$zipL', '$usrtelL', '$streetH','$cityH', '$stateH', '$countryH', '$zipH', '$usrtelH', '$classLevel', '$school'
-    , '$campusLocation', '$major', '$department', '$gradYearMonth', '$degree', `$campusemployee', '$finAid', '$finAidNotice', '$finAidDesc', '$namePub'
+    , '$campusLocation', '$major', '$department', '$gradYearMonth', '$degree', '$campusemployee', '$finAid', '$finAidNotice', '$finAidDesc', '$namePub'
     , '$homeNewspaper', '$penName', '$login_name', now())
 SQL;
 if (!$db->query($sqlInsert)) {
