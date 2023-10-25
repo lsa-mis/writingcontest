@@ -281,6 +281,20 @@ if ($hasApplicantDetails) {
                         <input class="date-picker form-control" id="gradYearMonth" tabindex="260" required name="gradYearMonth" />
                         <label for="degree">Degree</label>
                         <input class="form-control" type="text" tabindex="270" required name="degree" placeholder="example: Bachelors" />
+                        <!-- //////////////////////////////// -->
+
+                        <hr>
+                        <h5>CAMPUS EMPLOYMENT:</h5>
+                        <p>In the event you are a contest winner, we need to know if you are currently employed on campus to enable the correct processing of your award.</p>
+                        <label for="campusemployee">Are you currently an active campus employee <em>(workstudy, GSI, etc)</em>?&nbsp;&nbsp;</label>
+                        <label class="radio-inline">
+                          <input type="radio" id="inlineRadio1" name="campusemployee" required <?php echo ($campusemployee == 1)? 'checked' : ''; ?> value="1"> YES
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" id="inlineRadio2" name="campusemployee" required <?php echo ($campusemployee == 0)? 'checked' : ''; ?> value="0"> NO
+                        </label>
+                        <!-- //////////////////////////////// -->
+
                         <hr>
                         <label for="finAid">Do you receive NEED-BASED financial aid?&nbsp;&nbsp;</label>
                         <label class="radio-inline">
@@ -300,7 +314,6 @@ if ($hasApplicantDetails) {
                           <label for="finAidDesc">In what years and terms did you recieve aid:</label>
                           <input class="form-control" type="textarea" name="finAidDesc" placeholder="In what years and terms did you recieve aid"/>
                         </div>
-
                         <!-- //////////////////////////////// -->
 
                         <hr>
