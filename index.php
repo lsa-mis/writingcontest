@@ -288,10 +288,10 @@ if ($hasApplicantDetails) {
                         <p>In the event you are a contest winner, we need to know if you are currently employed on campus to enable the correct processing of your award.</p>
                         <label for="campusemployee">Are you currently an active campus employee <em>(workstudy, GSI, etc)</em>?&nbsp;&nbsp;</label>
                         <label class="radio-inline">
-                          <input type="radio" id="inlineRadio1" name="campusemployee" required <?php echo ($campusemployee == 1)? 'checked' : ''; ?> value="1"> YES
+                          <input type="radio" id="inlineRadio1" name="campusemployee" required value="1"> YES
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" id="inlineRadio2" name="campusemployee" required <?php echo ($campusemployee == 0)? 'checked' : ''; ?> value="0"> NO
+                          <input type="radio" id="inlineRadio2" name="campusemployee" required value="0"> NO
                         </label>
                         <!-- //////////////////////////////// -->
 
