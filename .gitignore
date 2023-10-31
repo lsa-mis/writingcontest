@@ -1,3 +1,4 @@
 # Ignore the .htaccess and htaccess files
 .htaccess
 htaccess
+error_log
